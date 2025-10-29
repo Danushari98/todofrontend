@@ -7,7 +7,7 @@ function App() {
     const [todos, setTodos] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/todos/')
+        axios.get('https://todobackend-qosa.onrender.com/api/todos/')
             .then(res => setTodos(res.data));
     }, []);
 
